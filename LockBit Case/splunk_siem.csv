@@ -1,0 +1,12 @@
+timestamp,_time,device,src_ip,dst_ip,src_port,dst_port,protocol,action,event_type,username,msg,malware_name,malware_hash
+2025-11-04 10:15:12,2025-11-04T10:15:12Z,fw-asa1,10.0.0.45,93.184.216.34,52345,80,tcp,allow,network_connection,svc_backup,"HTTP GET to /download/Invoice2025.exe",,
+2025-11-04 10:16:06,2025-11-04T10:16:06Z,fw-asa1,10.0.0.45,93.184.216.34,52346,443,tcp,allow,network_connection,svc_backup,"TLS session established to external host",,
+2025-11-04 10:16:10,2025-11-04T10:16:10Z,fw-asa1,10.0.0.45,198.51.100.151,52347,8080,tcp,allow,network_connection,svc_backup,"Downloaded suspicious payload from 198.51.100.151:8080",,
+2025-11-04 10:18:05,2025-11-04T10:18:05Z,fw-asa1,10.0.0.45,203.0.113.77,52355,443,tcp,allow,network_connection,svc_backup,"POST /checkin to suspicious domain k1.example-c2.biz",,
+2025-11-04 10:20:10,2025-11-04T10:20:10Z,fw-asa1,10.0.0.45,198.51.100.250,52400,8080,tcp,allow,network_connection,svc_backup,"Secondary payload retrieved: stage2.bin",,
+2025-11-04 10:22:45,2025-11-04T10:22:45Z,fw-asa1,10.0.0.45,198.51.100.150,52410,443,tcp,allow,network_connection,svc_backup,"C2 beacon to 198.51.100.150",,
+2025-11-04 10:25:01,2025-11-04T10:25:01Z,siem-core,10.0.0.45,10.0.0.46,0,445,tcp,blocked,malware,,"SMB connection attempts to multiple hosts - possible lateral movement",LockBit,3b7a9b2f4e3a6c9d1e2f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5
+2025-11-04 10:25:05,2025-11-04T10:25:05Z,siem-core,10.0.0.45,10.0.0.47,0,445,tcp,blocked,malware,,"SMB connection attempts to multiple hosts - possible lateral movement",LockBit,3b7a9b2f4e3a6c9d1e2f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5
+2025-11-04 10:26:12,2025-11-04T10:26:12Z,siem-core,10.0.0.45,*,0,0,process,malicious_process,svc_backup,"Process created: C:\Windows\Temp\invoice_updater.exe - spawning encryptor",LockBit,3b7a9b2f4e3a6c9d1e2f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5
+2025-11-04 10:27:00,2025-11-04T10:27:00Z,siem-core,10.0.0.45,*,0,0,process,file_encryption,svc_backup,"Multiple files encrypted: C:\Users\Public\Documents\report.docx",LockBit,3b7a9b2f4e3a6c9d1e2f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5
+2025-11-04 10:27:05,2025-11-04T10:27:05Z,siem-core,10.0.0.45,198.51.100.150,52410,443,tcp,allow,network_connection,svc_backup,"Final C2 checkin with encryption key exchange",LockBit,3b7a9b2f4e3a6c9d1e2f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5

@@ -1,0 +1,14 @@
+Nov 04 10:15:12 fw-asa1 %ASA-6-302015: Built outbound TCP connection 41234 for inside:10.0.0.45/52345 to outside:198.51.100.150/80
+Nov 04 10:15:12 fw-asa1 %ASA-6-305012: Translation by NAT for inside:10.0.0.45/52345 to outside:203.0.113.200/52345
+Nov 04 10:15:13 fw-asa1 %ASA-4-302013: Deny tcp src outside:198.51.100.150/52345 dst inside:10.0.0.45/52345 by access-group "outside_access_in"
+Nov 04 10:16:05 fw-asa1 %ASA-6-302013: Built outbound TCP connection 41235 for inside:10.0.0.45/52346 to outside:93.184.216.34/443
+Nov 04 10:16:06 fw-asa1 %ASA-6-302014: Teardown TCP connection 41235 for inside:10.0.0.45/52346 to outside:93.184.216.34/443 duration 0:00:02 bytes 45210
+Nov 04 10:16:10 fw-asa1 %ASA-6-302013: Built outbound TCP connection 41236 for inside:10.0.0.45/52347 to outside:198.51.100.151/8080
+Nov 04 10:17:33 fw-asa1 %ASA-4-302013: Deny tcp src outside:198.51.100.151/60000 dst inside:10.0.0.46/445 by access-group "outside_access_in"
+Nov 04 10:18:01 fw-asa1 %ASA-6-302013: Built outbound TCP connection 41240 for inside:10.0.0.45/52355 to outside:203.0.113.77/443
+Nov 04 10:18:05 fw-asa1 %ASA-6-302014: Teardown TCP connection 41240 for inside:10.0.0.45/52355 to outside:203.0.113.77/443 duration 0:00:03 bytes 120000
+Nov 04 10:20:10 fw-asa1 %ASA-6-302013: Built outbound TCP connection 41250 for inside:10.0.0.45/52400 to outside:198.51.100.250/8080
+Nov 04 10:21:00 fw-asa1 %ASA-4-302013: Deny tcp src outside:198.51.100.250/60001 dst inside:10.0.0.47/445 by access-group "outside_access_in"
+Nov 04 10:22:45 fw-asa1 %ASA-6-302013: Built outbound TCP connection 41260 for inside:10.0.0.45/52410 to outside:198.51.100.150/443
+Nov 04 10:23:01 fw-asa1 %ASA-6-302014: Teardown TCP connection 41260 for inside:10.0.0.45/52410 to outside:198.51.100.150/443 duration 0:00:01 bytes 20480
+Nov 04 10:24:12 fw-asa1 %ASA-4-302013: Deny tcp src outside:198.51.100.150/60002 dst inside:10.0.0.45/445 by access-group "outside_access_in"
